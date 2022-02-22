@@ -7,6 +7,59 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <table cellspacing="0" width="100%" height="40px" align="center" cellpadding="15" class="navbar">
+        <tr align="center" style="margin: 0px 100px 0px 100px;">
+            <td width="200px"></td>
+            <td><a href="#" style="text-decoration: none;"><font color="#000">Form</font></a></td>
+            <td><a href="kalkulator.html" style="text-decoration: none;"><font color="#000">Kalkulator</font></a></td>
+            <td width="200px"></td>
+        </tr>
+    </table>
+    <hr>
+    <center><h1>Input Data Mahasiswa</h1></center>
+	<div class="regist">
+		<form action="#" onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>NPM</label><br>
+				<input type="number" size="8" name="npm" id="npm" />
+			</div>
+            <div>
+				<label>Jenis Kelamin:</label><br>
+				<input type="radio" id="jenis_kelamin" name="laki-laki" value="laki-laki">
+                <label for="html">Laki-laki</label>
+                <input type="radio" id="jenis_kelamin" name="perempuan" value="perempuan">
+                <label for="perempuan">Perempuan</label><br>
+			</div>
+            <div>
+				<label>Tempat, Tanggal Lahir:</label>
+                <input type="text" value="Tangerang" id="tempat" name="tempat" size="10">
+                <input type="date" size="30" id="tanggal" name="ttl" />
+			</div>
+            <div>
+                <label>Agama:</label>
+                <select name="agama" id="agama">
+                    <option value="Islam"> Islam</option>
+                    <option value="Kristen"> Kristen</option>
+                    <option value="Budha"> Budha</option>
+                    <option value="Hindu"> Hindu</option>
+                </select>
+            </div>
+            <div>
+                <label>Hobby:</label>
+                <input type="text" size="30" id="hobby" name="hobby"/>
+            </div>
+			<div>
+				<label>Alamat:</label>
+				<textarea cols="15" rows="5" name="alamat" id="alamat"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Daftar" class="tombol">
+			</div>
+		</form>
+	</div>
 </body>
 </html>
