@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Code</title>
+    <style>
+        .navbar {
+        font-weight: bold;
+        }
+
+        body {
+        background: #87cefa;
+        font-family: sans-serif;
+        }
+
+        h1 {
+        color: #fff;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table cellspacing="0" width="100%" height="40px" align="center" cellpadding="15" class="navbar">
+        <tr align="center" style="margin: 0px 100px 0px 100px;">
+            <td width="200px"></td>
+            <td><a href="index.html" style="text-decoration: none;"><font color="#000">Form</font></a></td>
+            <td><a href="kalkulator.html" style="text-decoration: none;"><font color="#000">Kalkulator</font></a></td>
+            <td width="200px"></td>
+        </tr>
+    </table>
+    <hr>
+    <u><h1>Program Kalkulator</h1></u>
+    <form name="form">
+      <b><p>Bil 1</p></b>
+      <input type="number" name="a" size="10" style="font-size:20pt;">    
+      <b><p>Bil 2</p></b>
+      <input type="number" name="b" size="10" style="font-size:20pt;">    
+      <b><p>Hasil</p></b>
+      <input type="number" name="hasil" size="10" style="font-size:20pt;">    
+    </form>
+      <input type="button" value=" + " onClick="tambah()" style="height:60px; width:100px; font-size:35pt;">
+      <input type="button" value=" - " onClick="kurang()" style="height:60px; width:100px; font-size:35pt;">
+      <input type="button" value=" x " onClick="kali()" style="height:60px; width:100px; font-size:35pt;">
+      <input type="button" value=" / " onClick="bagi()" style="height:60px; width:100px; font-size:35pt;">
+  <SCRIPT LANGUAGE="JavaScript">   
+      function tambah()
+      {
+      a=eval(form.a.value)
+      b=eval(form.b.value)
+      c=a+b
+      form.hasil.value = c
+      }
+  
+      function kurang()
+      {
+      a=eval(form.a.value)
+      b=eval(form.b.value)
+      c=a-b
+      form.hasil.value=c
+      }
+  
+      function kali()
+      {
+      a=eval(form.a.value)
+      b=eval(form.b.value)
+      c=a*b
+      form.hasil.value=c
+      }
+  
+      function bagi()
+      {
+      a=eval(form.a.value)
+      b=eval(form.b.value)
+      c=a/b
+      form.hasil.value = c
+      }
+      </SCRIPT>
+  </body>  
+  </html>
